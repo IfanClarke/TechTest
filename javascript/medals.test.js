@@ -6,8 +6,8 @@ function createMedalTable(medals) {
     const positionPoints = {1: 3, 2: 2, 3: 1};
 
     for (let event of medals) {
-        const teamPodiumResult = event.podium;
-        for(let positionData of teamPodiumResult) {
+        const teamPosition = event.podium;
+        for(let positionData of teamPosition) {
             const split = positionData.split(".");
             const position = split[0];
             const team = split[1];
